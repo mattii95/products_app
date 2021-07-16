@@ -14,6 +14,9 @@ class MyApp extends StatelessWidget {
         'login': ( BuildContext context ) => LoginPage(),
         'home': ( BuildContext context ) => HomePage(),
       },
+      theme: ThemeData.light().copyWith(
+        scaffoldBackgroundColor: Colors.grey[200],
+      ),
     );
   }
 }
