@@ -3,7 +3,7 @@ import 'package:products_app/pages/pages.dart';
 import 'package:products_app/services/services.dart';
 import 'package:provider/provider.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(AppState());
 
 class AppState extends StatelessWidget {
   @override
