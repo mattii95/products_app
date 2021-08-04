@@ -1,12 +1,14 @@
 import 'dart:convert';
 
+import 'package:products_app/models/models.dart';
+
 class ProductModel {
-  ProductModel({
-    required this.available,
-    required this.name,
-    this.picture,
-    required this.price,
-  });
+  ProductModel(
+      {required this.available,
+      required this.name,
+      this.picture,
+      required this.price,
+      this.id});
 
   bool available;
   String name;
@@ -32,4 +34,11 @@ class ProductModel {
         "picture": picture,
         "price": price,
       };
+
+  ProductModel copy() => ProductModel(
+      available: this.available,
+      name: this.name,
+      picture: this.picture,
+      price: this.price,
+      id: this.id);
 }
